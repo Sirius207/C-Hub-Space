@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>chub demo</title>
+<meta name="keyword" content="網站關鍵字">
+<meta name="description" content="網站描述">
+<meta name="robots" content="all">
+<meta name="distribution" content="GLOBAL">
+<meta name="rating" content="general">
+<meta name="revisit-after" content="7 days">
+<!--css-->
+<link href="images/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="images/css/content.css" rel="stylesheet" type="text/css" />
+<link href="images/css/layout.css" rel="stylesheet" type="text/css" />
+ <!--nav-->         
+<link href="images/css/nav.css" rel="stylesheet" type="text/css" />
+
+<script src="includes/js/jquery-1.9.1.min.js"></script>
+<script>
+$(function(){
+	$(window).load(function(){
+		$(window).bind('scroll resize', function(){
+			var $this = $(this);
+			var $this_Top=$this.scrollTop();
+			
+			//當高度小於100時，關閉區塊	
+			if($this_Top < 76){
+				$('#top-bar').stop().animate({top:"-76px"});
+				}
+			if($this_Top > 76){
+				$('#top-bar').stop().animate({top:"0px"});
+						
+			}
+		}).scroll();
+	});
+});
+</script>
+
+    
+<!--js-->   
+<script type="text/javascript" src="includes/js/swfobject.js"></script>
+<script type="text/javascript" src="includes/js/jquery.min.js"></script>
+
+	<script language="javascript">
+		$(document).ready(function() {
+
+			/*	2nd example	*/
+			
+			$("#nav1 li a").wrapInner( '<span class="out"></span>' );
+			
+			$("#nav1 li a").each(function() {
+				$( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+			});
+
+			$("#nav1 li a").hover(function() {
+				$(".out",	this).stop().animate({'top':	'76px'},	200); // move down - hide
+				$(".over",	this).stop().animate({'top':	'0px'},		200); // move down - show
+
+			}, function() {
+				$(".out",	this).stop().animate({'top':	'0px'},		200); // move up - show
+				$(".over",	this).stop().animate({'top':	'-76px'},	200); // move up - hide
+			});
+
+		});
+
+	</script>
+   
+
+<!--回上層按鈕-->   
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="includes/js/main.js"></script> 
+
+
+<!--[if lt IE 8]>
+   <style type="text/css">
+   li a {display:inline-block;}
+   li a {display:block;}
+   </style>
+<![endif]--> 
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+</script>
+
+</head>
+<body>
+<!--置頂選單-->
+<div id="top-bar">
+  <div id="indextop1020px">
+  <div id="indextopswf">  
+                <div id="logo"><a href="index.html"><img src="images/logo.png" width="278" height="76" /></a></div>
+                <div id="indextop">
+                  <div id="nav1" class="nav">
+                    <ul>
+                      <li><a href="contact.html">聯絡我們</a></li>
+                       <li><a href="about.html">關於我們</a></li>
+                      <li><a href="chub.html">C-Hub Club</a></li>
+                      <li><a href="news.html">最新消息</a></li>
+                      <li><a href="index.html">首頁</a></li> 
+                    </ul>
+                    <div class="cls"></div>
+                  </div>
+                </div>
+  </div>
+</div>
+</div>
+
+
+<!--TOP-->
+<div id="indextopbg">
+<div id="indextop1020px">
+  <div id="indextopswf">  
+                <div id="logo"><a href="index.html"><img src="images/logo.png" width="278" height="76" /></a></div>
+                <div id="indextop">
+                  <div id="nav1" class="nav">
+                    <ul>
+                      <li><a href="contact.html">聯絡我們</a></li>
+                       <li><a href="about.html">關於我們</a></li>
+                      <li><a href="chub.html">C-Hub Club</a></li>
+                      <li><a href="news.html">最新消息</a></li>
+                      <li><a href="index.html">首頁</a></li> 
+                    </ul>
+                    <div class="cls"></div>
+                  </div>
+                </div>
+  </div>
+</div>
+</div>
+  
+
+
+  
+
+
+  <!--區塊01-->
+  <div id="clubbg01">
+<div class="wrapper">
+  <div id="club01_content">
+    <div id="club01_title">
+    <span class="club01_title_01">C-Hub Club</span>
+    <br />
+    <span class="club01_title_02"> Enable your innovator spirit！</span>   </div>
+    
+    <div id="club01btn">
+   
+     <a href="#" class="css_btn_class02">加入C-Hub</a>
+
+    </div>
+    
+  </div>
+
+</div>
+  </div>
+
+  
+  
+    <!--區塊02-->
+  <div id="clubbg02">
+<div class="wrapper">
+  <div class="clubcontent">
+  
+  <div id="club02_title_w">
+    <div class="index_title_cht_w_big">什麼是C-Hub Club</div>
+    </div>
+        <div id="club02_w">C-Hub Club是C-Hub成立的社團組織，<br />
+          目的在於整合成大規劃與設計學院內的相關資源設備，並以C-Hub為平台，<br />
+        進行校內 Maker、Hacker、Designer 之基礎課程訓練、活動推廣、創意發想與議題設定，落實Fablab的精神。</div>
+  </div>
+  
+  
+</div>
+  </div>
+  
+  
+    <!--區塊03-->
+  <div id="clubbg03">
+<div class="wrapper">
+  <div class="clubcontent">
+  
+  <div id="club03_title">
+    <div id="club03_title_cht">加入C-Hub<br />
+      你可享有的權益有 ...</div>
+    </div>
+  <div id="index03_banner">
+    <div class="index03_banner_box">
+      <div class="index03_banner_box_pic"> <img src="images/club_b01.png" width="138" height="138" /></div>
+      <div class="index03_banner_box_en">課程訓練</div>
+      <div class="index03_banner_box_cht"> 藉由課程與工作坊舉辦，<br />
+        建立校內 innovator 種子成員之社群，並進行認證分級、訓練機制</div>
+    </div>
+    <div class="index03_banner_box">
+      <div class="index03_banner_box_pic"> <img src="images/club_b02.png" width="138" height="138" /></div>
+      <div class="index03_banner_box_en">C-Hub講堂</div>
+      <div class="index03_banner_box_cht"> 定期邀請產業夥伴<br />
+        分享心路歷程、作品</div>
+    </div>
+    <div class="index03_banner_box">
+      <div class="index03_banner_box_pic"> <img src="images/club_b03.png" width="138" height="138" /></div>
+      <div class="index03_banner_box_en"> 創意工作坊</div>
+      <div class="index03_banner_box_cht"> 定期舉辦活動、藉相關工作坊、競賽匯聚創意人才</div>
+    </div>
+    <div class="index03_banner_box">
+      <div class="index03_banner_box_pic"> <img src="images/club_b04.png" width="138" height="138" /></div>
+      <div class="index03_banner_box_en"> 創客擂台</div>
+      <div class="index03_banner_box_cht"> 定期邀請創客<br />
+        發表作品、切磋技藝</div>
+    </div>
+    <div class="index03_banner_box">
+      <div class="index03_banner_box_pic"> <img src="images/club_b05.png" width="138" height="138" /></div>
+      <div class="index03_banner_box_en"> 創業媒合</div>
+      <div class="index03_banner_box_cht"> 定期邀請產業參觀，<br />
+        媒合外部資金，實踐創業夢想</div>
+    </div>
+  </div>
+    
+
+
+  </div>
+
+</div>
+  </div>
+  
+    <!--區塊04-->
+  <div id="clubbg04">
+<div class="wrapper">
+  <div class="clubcontent">
+    <div id="club04_title">
+      <div id="club04_title_cht">招募對象</div>
+    </div>
+    <div id="club04_banner"><img src="images/club_pic02.png" width="848" height="366" /></div>
+  </div>
+</div>
+  </div>
+
+
+    <!--區塊05-->
+  <div id="clubbg05">
+<div class="wrapper">
+  <div class="clubcontent">
+    <div id="club05_title">
+      <div id="club05_title_cht">加入我們</div>
+    </div>
+    <div id="club05_w">5月1日正式招募！</div>
+  </div>
+</div>
+  </div>
+
+
+
+    <div id="google"></div>
+      <!--footer-->
+<div id="basic">
+  <div id="basic_left">
+  <div id="basic_100">
+    <div id="basic_add">國立成功大學規劃與設計學院<br />
+      C-Hub @ NCKU 創意基地<br />
+    地址｜台南市大學路一號 University Road, Tainan, TAIWAN 701</div>
+    <div id="basic_copyright">© 2016 C-Hub @ NCKU 創意基地. All rights reserved. Presented by xLab.</div>
+    </div>
+  </div>
+</div>
+
+    <p>
+	<a href="#0" class="cd-top">Top</a>
+</p>
+
+
+</body>
+</html>
