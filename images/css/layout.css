@@ -185,28 +185,36 @@ a:hover{
 /* 版面index01 */
 #indexcontent {
 	float: left;
-	width: 1020px;
+	width: 100%;
 	padding-top: 180px;
 	padding-bottom: 80px;
 }
 #indexpic01 {
-	width: 606px;
-	height: 214px;
+	width: 50%;
+	min-width: 280px;
 	margin-right: auto;
 	margin-left: auto;
+	text-align: center;
 }
+#indexpic01 img{
+	width: 100%;
+	max-width: 606px;
+    min-width: 250px;
+}
+
 #indexpic02 {
-	width: 544px;
 	margin-right: auto;
 	margin-left: auto;
 	height: 90px;
-	padding-top: 80px;
+	padding-top: 6%;
+	text-align: center;
 }
 .indexbtn {
 	width: auto;
-	float: left;
+	display: inline-block;
 	margin-right: 18px;
 	margin-left: 18px;
+	margin-bottom: 20px;
 }
 .css_btn_class01 {
 	font-size: 18px;
@@ -304,14 +312,15 @@ a:hover{
 
 /* 版面index02 */
 #indexcontent02 {
-	width: 500px;
+	width: 50%;
+    min-width: 300px;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
 	padding-top: 100px;
 }
 #index02_newsbg {
-	width: 605px;
+	width: 60%;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 28px;
@@ -332,10 +341,11 @@ a:hover{
 	line-height: 24px;
 	color: #333;
 	float: left;
+	text-align: center;
 
 			top:150px;
 			left:400px;
-			width:600px;
+			width:100%;
 			height:80px; 
 			overflow:hidden;
 }
@@ -382,16 +392,23 @@ a:hover{
 }
 /* 版面layout */
 .wrapper {
-	width: 1020px;
+	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
 }
 /* ----------------版面03*/
 #indexcontent03 {
-	float: left;
-	width: 1020px;
+	width: 100%;
 	padding-top: 100px;
 	padding-bottom: 80px;
+}
+
+#indexcontent03::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 .index_title {
@@ -424,26 +441,36 @@ a:hover{
 	letter-spacing: 2px;
 }
 #index03_w {
-	width: 100%;
+	width: auto;
 	text-align: center;
 	font-family: "微軟正黑體", Verdana;
 	font-size: 15px;
 	line-height: 25px;
 	color: #333;
 	letter-spacing: 1px;
+	padding: 0 20px;
 }
 #index03_banner {
 	width: 100%;
-	text-align: left;
+	text-align: center;
 	padding-top: 70px;
 	float: left;
 }
+#index03_banner::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
 .index03_banner_box {
 	width: 184px;
 	text-align: center;
-	float: left;
 	margin-right: 10px;
 	margin-left: 10px;
+	margin-bottom: 20px;
+	display: inline-block;
 }
 .index03_banner_box_pic {
 	width: 100%;
@@ -476,7 +503,7 @@ a:hover{
 /* 版面index04 */
 #indexcontent04 {
 	float: left;
-	width: 1020px;
+	width: 100%;
 	padding-top: 100px;
 
 }
@@ -524,7 +551,7 @@ a:hover{
 
 
 #index04_w {
-	width: 100%;
+	width: auto;
 	text-align: center;
 	font-family: "微軟正黑體", Verdana;
 	font-size: 15px;
@@ -533,6 +560,8 @@ a:hover{
 	letter-spacing: 1px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -545,6 +574,10 @@ a:hover{
 	padding-bottom: 50px;
 }
 
+#index04_pic img{
+	width: 100%;
+	max-width: 605px;
+}
 
 /* 區塊05*/
 #indexcontent05 {
@@ -554,6 +587,14 @@ a:hover{
 	background-position: left center;
 	min-height: 600px;
 	background-repeat: no-repeat;
+}
+
+#indexcontent05::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
 #indexcontent05_w_left {
@@ -649,26 +690,31 @@ a:hover{
 /* 區塊06*/
 
 #index06_left{
-	float: left;
+	position: relative;
 	font-family: "微軟正黑體", Verdana;
 	font-size: 13px;
 	line-height: 25px;
 	color: #333;
-	width: 30%;
-	min-width: 572px;
+	width: 100%;	
+    max-width: 572px;
 	background-image: url(../index_pic03.png);
 	height: 591px;
+	height: 95vh;
+	max-height: 591px;
 	background-repeat: no-repeat;
+	background-size: contain;
 }
 #index06_left_icon {
-	float: left;
+	position: 	absolute;
+	top: 0;	
+	bottom: 0;
+	margin: auto;
 	height: 50px;
-	padding-left: 215px;
-	width: 230px;
-	padding-top: 338px;
+	text-align: center;
+	width: 100%;
 }
 .index06_icon_pic {
-	float: left;
+	display: inline-block;
 	height: 50px;
 	width: 50px;
 	margin-right: 5px;
@@ -676,10 +722,12 @@ a:hover{
 }
 
 #index06_right{
-	width: 60%;
+	width: 100%;
+	max-width: 	810px;
 	float: right;
 	padding-top: 80px;
 	padding-bottom: 50px;
+	word-break: break-all;
 }
 #index06_center{
 	width: 90%;
@@ -738,8 +786,9 @@ a:hover{
 	font-weight: bold;
 }
 #index06_contact_right {
-	width: 39%;
-	float: right;
+	width: 100%;
+    max-width: 315px;
+	margin: 0 auto;
 	font-family: "微軟正黑體", Verdana;
 	font-size: 13px;
 	line-height: 28px;
@@ -832,7 +881,7 @@ a:hover{
 
 }
 #basic_left {
-	width: 1020px;
+	width: 100%;
 	text-align: center;
 	margin-right: auto;
 	margin-left: auto;
@@ -918,8 +967,8 @@ a:hover{
 	margin-left: auto;
 }
 #indextopswf {
-	width: 100%;
-	float: left;
+	width: 80%;
+    margin: 0 auto;
 	height: 76px;
 
 }
