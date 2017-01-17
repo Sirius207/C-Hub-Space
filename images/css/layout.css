@@ -1015,6 +1015,21 @@ a:hover{
 	}
 	#indextopbg{
 		position: fixed;
+		z-index: 1;
+	}
+	#indextop {
+    width: 100%;
+    text-align: center;
+	}
+	.nav ul{
+		display: inline-block;
+	}
+	#indexcontent{
+		padding-top: 360px;
+	}
+	#logo{
+		float: none;
+		margin: auto;
 	}
 }
 
