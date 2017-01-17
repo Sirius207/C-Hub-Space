@@ -193,16 +193,16 @@
 	font-size: 16px;
 	font-family: "微軟正黑體", Verdana;
 	color: #333;
-}	 
+}
 .newslist dd a:hover {
 	line-height: 26px;
 	font-size: 16px;
 	font-family: "微軟正黑體", Verdana;
 	color: #666;
-}	 
+}
 
 
-	 
+
 .newslist h2{
 	font-size: 18px;
 	float: left;
@@ -339,20 +339,20 @@
 	margin-left: auto;
 	padding-top: 160px;
 	text-align: center;
-}	
+}
 .club01_title_01 {
 	font-family: "微軟正黑體", Verdana;
 	font-size: 60px;
 	line-height: 66px;
 	color: #2a234d;
 	font-weight: bold;
-}	
+}
 .club01_title_02 {
 	font-family: "微軟正黑體", Verdana;
 	font-size: 36px;
 	line-height: 40px;
 	color: #2a234d;
-}	
+}
 #club01btn {
 	width: 544px;
 	margin-right: auto;
@@ -496,7 +496,7 @@
 /*about區塊01 */
 #about01_content {
 	float: left;
-	width: 1020px;
+	width: 100%;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	text-align: center;
@@ -553,7 +553,7 @@
 /*about區塊02 */
 #about02_content {
 	float: left;
-	width: 1020px;
+	width: 100%;
 	padding-top: 20px;
 	padding-bottom: 20px;
 	text-align: center;
@@ -563,7 +563,7 @@
 /*about區塊03 */
 #about03_content {
 	float: left;
-	width: 1020px;
+	width: 100%;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align: center;
@@ -597,7 +597,7 @@
 /*about區塊05 */
 #about05_content {
 	float: left;
-	width: 1020px;
+	width: 100%;
 	padding-top: 80px;
 	padding-bottom: 80px;
 	text-align: center;
