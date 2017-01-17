@@ -3,17 +3,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>chub demo</title>
-<meta name="keyword" content="網站關鍵字">
-<meta name="description" content="網站描述">
+<meta name="keyword" content="NCKU, C-Hub">
+<meta name="description" content="C-Hub Club是C-Hub成立的社團組織，
+目的在於整合成大規劃與設計學院內的相關資源設備，並以C-Hub為平台，
+進行校內 Maker、Hacker、Designer 之基礎課程訓練、活動推廣、創意發想與議題設定，落實Fablab的精神。">
 <meta name="robots" content="all">
 <meta name="distribution" content="GLOBAL">
 <meta name="rating" content="general">
 <meta name="revisit-after" content="7 days">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--css-->
 <link href="images/css/reset.css" rel="stylesheet" type="text/css" />
 <link href="images/css/content.css" rel="stylesheet" type="text/css" />
 <link href="images/css/layout.css" rel="stylesheet" type="text/css" />
- <!--nav-->         
+ <!--nav-->
 <link href="images/css/nav.css" rel="stylesheet" type="text/css" />
 
 <script src="includes/js/jquery-1.9.1.min.js"></script>
@@ -23,14 +26,14 @@ $(function(){
 		$(window).bind('scroll resize', function(){
 			var $this = $(this);
 			var $this_Top=$this.scrollTop();
-			
-			//當高度小於100時，關閉區塊	
+
+			//當高度小於100時，關閉區塊
 			if($this_Top < 76){
 				$('#top-bar').stop().animate({top:"-76px"});
 				}
 			if($this_Top > 76){
 				$('#top-bar').stop().animate({top:"0px"});
-						
+
 			}
 		}).scroll();
 	});
@@ -38,7 +41,7 @@ $(function(){
 </script>
 
 
-<!--js-->   
+<!--js-->
 <script type="text/javascript" src="includes/js/swfobject.js"></script>
 <script type="text/javascript" src="includes/js/jquery.min.js"></script>
 
@@ -46,9 +49,9 @@ $(function(){
 		$(document).ready(function() {
 
 			/*	2nd example	*/
-			
+
 			$("#nav1 li a").wrapInner( '<span class="out"></span>' );
-			
+
 			$("#nav1 li a").each(function() {
 				$( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
 			});
@@ -65,11 +68,11 @@ $(function(){
 		});
 
 	</script>
-   
 
-<!--回上層按鈕-->   
+
+<!--回上層按鈕-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="includes/js/main.js"></script> 
+<script src="includes/js/main.js"></script>
 
 
 <!--[if lt IE 8]>
@@ -77,7 +80,7 @@ $(function(){
    li a {display:inline-block;}
    li a {display:block;}
    </style>
-<![endif]--> 
+<![endif]-->
 <script type="text/javascript">
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
@@ -91,7 +94,7 @@ function MM_preloadImages() { //v3.0
 <!--置頂選單-->
 <div id="top-bar">
   <div id="indextop1020px">
-  <div id="indextopswf">  
+  <div id="indextopswf">
                 <div id="logo"><a href="index.html"><img src="images/logo.png" width="278" height="76" /></a></div>
                 <div id="indextop">
                   <div id="nav1" class="nav">
@@ -110,7 +113,7 @@ function MM_preloadImages() { //v3.0
 <!--TOP-->
 <div id="indextopbg">
 <div id="indextop1020px">
-  <div id="indextopswf">  
+  <div id="indextopswf">
                 <div id="logo"><a href="index.html"><img src="images/logo.png" width="278" height="76" /></a></div>
                 <div id="indextop">
                   <div id="nav1" class="nav">
@@ -124,10 +127,10 @@ function MM_preloadImages() { //v3.0
   </div>
 </div>
 </div>
-  
 
 
-  
+
+
 
 
   <!--區塊01-->
@@ -141,7 +144,7 @@ function MM_preloadImages() { //v3.0
     <div class="about01_w">企業夥伴透過真實計畫之發題與共創，結合校園研發能量與產業技術能力，
       <br />
       從設計、文化、健康、科技與永續五個亮點進行企業之發題，實現校園與產業間之滲透效益，企盼為城市帶來正面之社會效益。</div>
-    
+
   </div>
 </div>
   </div>
@@ -171,8 +174,8 @@ function MM_preloadImages() { //v3.0
   </div>
 </div>
   </div>
-  
-  
+
+
       <!--區塊04-->
   <div id="aboutbg04">
 <div class="wrapper">
@@ -191,7 +194,7 @@ function MM_preloadImages() { //v3.0
     <div class="about01_title_cht">C-Hub 組織</div></div>
     <div class="about01_w">C-Hub從生活發展、生活體驗和生活策劃三個方向來經營發展</div>
     <div id="about05_pic"><img src="images/about_pic06.png" width="928" height="288" /></div>
-    
+
   </div>
 </div>
   </div>
