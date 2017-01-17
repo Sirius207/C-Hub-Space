@@ -495,7 +495,6 @@
 
 /*about區塊01 */
 #about01_content {
-	float: left;
 	width: 100%;
 	padding-top: 40px;
 	padding-bottom: 40px;
@@ -509,6 +508,7 @@
 	background-position: center bottom;
 	padding-bottom: 46px;
 	margin-bottom: 16px;
+	margin-top: 70px;
 }
 .about01_title02 {
 	width: 100%;
@@ -559,10 +559,14 @@
 	text-align: center;
 }
 
+#about02_content img{
+	max-width: 652px;
+	width: 100%;
+}
+
 
 /*about區塊03 */
 #about03_content {
-	float: left;
 	width: 100%;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -586,14 +590,29 @@
 	padding-bottom: 5px;
 }
 
+@media screen and (max-width: 910px) {
+	#about03_w{
+				width: 90%;
+				max-width: 600px;
+				background-image: none;
+				padding: 0;
+				margin:auto;
+	}
+}
+
 /*about區塊04 */
 #about04_content {
 	float: left;
-	width: 1020px;
+	width: 100%;
 	padding-top: 80px;
 	padding-bottom: 80px;
 	text-align: center;
 }
+#about04_content img{
+	max-width:725px;
+	width:100%;
+}
+
 /*about區塊05 */
 #about05_content {
 	float: left;
@@ -604,7 +623,12 @@
 }
 #about05_pic {
 	float: left;
-	width: 1020px;
+	width: 100%;
 	padding-top: 80px;
 	text-align: center;
+}
+
+#about05_pic img{
+	max-width: 928px;
+	width: 100%;
 }

@@ -1004,11 +1004,19 @@ a:hover{
 
 }
 #indextop {
-	width: 610px;
+	width: 50%;
 	float: right;
 	height: 76px;
 }
 
+@media screen and (max-width: 690px) {
+	#top-bar{
+		display: none;
+	}
+	#indextopbg{
+		position: fixed;
+	}
+}
 
 
 /* Back to top button */
