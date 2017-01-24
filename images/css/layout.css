@@ -1033,6 +1033,11 @@ a:hover{
 	}
 }
 
+@media screen and (max-width: 540px){
+	#indexcontent {
+    padding-top: 280px;
+	}
+}
 
 /* Back to top button */
 
