@@ -1030,6 +1030,14 @@ a:hover{
 	}
 }
 
+@media screen and (max-width: 540px){
+	#indexcontent {
+		padding-top: 100px;
+	}
+	#indexbg01 {
+		min-height: 600px;
+	}
+}
 
 /* Back to top button */
 
