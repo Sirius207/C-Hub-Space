@@ -1037,6 +1037,15 @@ a:hover{
 	#indexbg01 {
 		min-height: 600px;
 	}
+	#about01_content .about01_title{
+		margin-top: 130px;
+	}
+	#aboutbg02, #aboutbg04 {
+    min-height: auto;
+	}
+	#about02_content,#about04_content {
+		float:none;
+	}
 }
 
 /* Back to top button */
