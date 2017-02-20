@@ -1014,7 +1014,7 @@ a:hover{
 		display: none;
 	}
 	#indextopbg{
-		position: fixed;
+		position: relative;
 		z-index: 1;
 	}
 	#indextop {
