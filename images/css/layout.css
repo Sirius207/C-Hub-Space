@@ -1024,20 +1024,12 @@ a:hover{
 	.nav ul{
 		display: inline-block;
 	}
-	#indexcontent{
-		padding-top: 360px;
-	}
 	#logo{
 		float: none;
 		margin: auto;
 	}
 }
 
-@media screen and (max-width: 540px){
-	#indexcontent {
-    padding-top: 280px;
-	}
-}
 
 /* Back to top button */
 
