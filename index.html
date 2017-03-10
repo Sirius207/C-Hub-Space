@@ -27,51 +27,34 @@
     <link href="images/css/layout.css" rel="stylesheet" type="text/css" />
     <!--nav-->
     <link href="images/css/nav.css" rel="stylesheet" type="text/css" />
-    <!--js-->
     <script src="includes/js/jquery-1.9.1.min.js"></script>
     <script>
     $(function(){
-      $(window).load(function(){
-        $(window).bind('scroll resize', function(){
-          var $this = $(this);
-          var $this_Top=$this.scrollTop();
+    $(window).load(function(){
+    $(window).bind('scroll resize', function(){
+    var $this = $(this);
+    var $this_Top=$this.scrollTop();
 
-            //當高度小於100時，關閉區塊
-          if($this_Top < 76){
-            $('#top-bar').stop().animate({top:"-76px"});
-            }
-          if($this_Top > 76){
-            $('#top-bar').stop().animate({top:"0px"});
+    //當高度小於100時，關閉區塊
+    if($this_Top < 76){
+    $('#top-bar').stop().animate({top:"-76px"});
+    }
+    if($this_Top > 76){
+    $('#top-bar').stop().animate({top:"0px"});
 
-          }
-        }).scroll();
-      });
+    }
+    }).scroll();
+    });
     });
     </script>
+
     <!--js-->
     <script type="text/javascript" src="includes/js/swfobject.js"></script>
     <script type="text/javascript" src="includes/js/jquery.min.js"></script>
-    <script language="javascript">
-      $(document).ready(function() {
-            /*  2nd example */
-
-        $("#nav1 li a").wrapInner( '<span class="out"></span>' );
-
-        $("#nav1 li a").each(function() {
-          $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
-        });
-        $("#nav1 li a").hover(function() {
-                $(".out", this).stop().animate({'top':  '76px'},  200); // move down - hide
-                  $(".over",  this).stop().animate({'top':  '0px'},   200); // move down - show
-        }, function() {
-                  $(".out", this).stop().animate({'top':  '0px'},   200); // move up - show
-                $(".over",  this).stop().animate({'top':  '-76px'}, 200); // move up - hide
-        });
-      });
-    </script>
     <!--回上層按鈕-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="includes/js/main.js"></script>
+
     <!--[if lt IE 8]>
     <style type="text/css">
     li a {display:inline-block;}
@@ -79,252 +62,121 @@
     </style>
     <![endif]-->
     <script type="text/javascript">
-    function MM_swapImgRestore() { //v3.0
-    var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+    function MM_preloadImages() { //v3.0
+    var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+      if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
       }
-      function MM_preloadImages() { //v3.0
-      var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-      var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-        if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-        }
-        function MM_findObj(n, d) { //v4.01
-        var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-        d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-        if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-        for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-        if(!x && d.getElementById) x=d.getElementById(n); return x;
-        }
-        function MM_swapImage() { //v3.0
-        var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-        if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-        }
-        </script>
-      </head>
-      <!--消息跑馬燈-->
-      <script type="text/javascript" src="includes/js/kxbdMarquee.js"></script>
-      <script type="text/javascript">
-        $(function(){
-          $('#marquee4').kxbdMarquee({direction:'up',isEqual:false});
-        });
       </script>
-
-
-
-
-
-      <body onload="MM_preloadImages('images/icon_fb_01.png','images/icon_gp.png')">
-        <!--置頂選單-->
-        <div id="top-bar">
-          <div id="">
-            <div id="indextopswf">
-              <div id="logo"><a href="index.html"><img src="images/logo.png" width="278" height="76" /></a></div>
-              <div id="indextop">
-                <div id="nav1" class="nav">
-                  <ul>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="space.html">場地申請</a></li>
-                  </ul>
-                  <div class="cls"></div>
-                </div>
-              </div>
-            </div>
+    </head>
+    <body>
+      <!--TOP-->
+      <div id="indextopbg">
+        <div id="">
+          <div id="indextopswf">
+            <div id="logo"><a href="index.html"><img src="images/logo.png" width="278" height="76" /></a></div>
           </div>
         </div>
-        <!--TOP-->
-        <div id="indextopbg">
-          <div id="">
-            <div id="indextopswf">
-              <div id="logo"><a href="index.html"><img src="images/logo.png" width="278" height="76" /></a></div>
-              <div id="indextop">
-                <div id="nav1" class="nav">
-                  <ul>
-                    <li><a href="about.html">關於我們</a></li>
-                    <li><a href="space.html">場地申請</a></li>
-                  </ul>
-                  <div class="cls"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--區塊01-->
-        <div id="indexbg01">
-          <div class="wrapper">
-            <div id="indexcontent">
-              <div id="indexpic01"><img src="images/index_pic01.png"/></div>
-              <div id="indexpic02">
-                <div class="indexbtn">
-                  <a href="about.html" class="css_btn_class01">關於C-Hub</a>
-                </div>
-                <div class="indexbtn">
-                  <a href="#indexbg06" class="css_btn_class01">聯絡我們</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--區塊03-->
-        <div id="indexbg03">
-          <div class="wrapper">
-            <div id="indexcontent03">
-
-              <div class="index_title">
-                <div class="index_title_en">our mission</div>
-                <div class="index_title_cht">我們的任務</div>
-              </div>
-
-              <div id="index03_w">打破現有校園的邊界，建立一個由業界人士引領產業創新與改造，<br />
-              學生提供創意點子，與市民共同想像城市未來面貌的創意基地</div>
-              <div id="index03_banner">
-                <div class="index03_banner_box">
-                  <div class="index03_banner_box_pic"> <img src="images/index03_b01.png" width="138" height="138" /></div>
-                  <div class="index03_banner_box_en"> Thinking</div>
-                  <div class="index03_banner_box_cht"> 無限制的想像與思考</div>
-                </div>
-                <div class="index03_banner_box">
-                  <div class="index03_banner_box_pic"> <img src="images/index03_b02.png" width="138" height="138" /></div>
-                  <div class="index03_banner_box_en"> Prototyping</div>
-                  <div class="index03_banner_box_cht"> 最純粹與原始的想像</div>
-                </div>
-                <div class="index03_banner_box">
-                  <div class="index03_banner_box_pic"> <img src="images/index03_b03.png" width="138" height="138" /></div>
-                  <div class="index03_banner_box_en"> Entrepreneurship</div>
-                  <div class="index03_banner_box_cht"> 產業與學園<br />
-                  共同培養新興創業家</div>
-                </div>
-                <div class="index03_banner_box">
-                  <div class="index03_banner_box_pic"> <img src="images/index03_b04.png" width="138" height="138" /></div>
-                  <div class="index03_banner_box_en"> Experiencing</div>
-                  <div class="index03_banner_box_cht"> 以體驗設計<br />
-                  塑造使用者旅程</div>
-                </div>
-                <div class="index03_banner_box">
-                  <div class="index03_banner_box_pic"> <img src="images/index03_b05.png" width="138" height="138" /></div>
-                  <div class="index03_banner_box_en"> Urban Realization</div>
-                  <div class="index03_banner_box_cht"> 實踐城市的想像與遠見</div>
-                </div>
-              </div>
-            </div>
+      </div>
 
 
-          </div>
-        </div>
-        <!--區塊04-->
-        <div id="indexbg04">
-          <div class="wrapper">
-            <div id="indexcontent04">
-              <div class="index_title_w">
-                <div class="index_title_en_w">our service</div>
-                <div class="index_title_cht_w">我們的服務</div>
-              </div>
+      <!--最新消息-->
+      <div id="newsbg">
+        <div class="wrapper">
+          <div id="newscontent">
 
-              <div id="index04_w">整合校內課程與人才資源，提供創新概念與構想，快速測試構想原型，提出創新方案</div>
-              <div id="index04_pic"> <img src="images/index02_pic02.png" /></div>
-            </div>
-          </div>
-        </div>
-
-
-        <!--區塊05-->
-        <div id="indexbg05">
-
-          <div id="indexcontent05">
-            <div id="indexcontent05_w_left"></div>
-            <div id="indexcontent05_w">
-              <div id="index05_title">FLOOR GUIDANCE<br />
-              樓層介紹</div>
-
-              <div class="index05_fbox">
-                <div class="index05_f_no"> 5F</div>
-                <div class="index05_f_w">
-                  <div class="index05_f_w01"> 育成實驗室</div>
-                  <div class="index05_f_w02">
-                  提供新生團隊與企業一個能互相工通、激盪的共同空間。</div>
-                </div>
-              </div>
-              <div class="index05_fbox">
-                <div class="index05_f_no"> 4F</div>
-                <div class="index05_f_w">
-                  <div class="index05_f_w01"> 典藏中心</div>
-                  <div class="index05_f_w02"> 從數位典藏出發，在C-Hub建立美學品味，攜手認識世界。</div>
-                </div>
-              </div>
-              <div class="index05_fbox">
-                <div class="index05_f_no"> 3F</div>
-                <div class="index05_f_w">
-                  <div class="index05_f_w01"> 展覽室</div>
-                  <div class="index05_f_w02"> 空間由室內延伸至室外，突破展覽的單一型態，並作為C-Hub講堂使用。</div>
-                </div>
-              </div>
-              <div class="index05_fbox">
-                <div class="index05_f_no"> 2F</div>
-                <div class="index05_f_w">
-                  <div class="index05_f_w01"> C-Hub咖啡</div>
-                  <div class="index05_f_w02"> 作為老師與企業的休閒空間</div>
-                </div>
-              </div>
-              <div class="index05_fbox">
-                <div class="index05_f_no"> 1F</div>
-                <div class="index05_f_w">
-                  <div class="index05_f_w01"> 共創空間</div>
-                  <div class="index05_f_w02"> 主要為共同工作空間及活動舉辦地，為產業與城市溝通及合作空間。</div>
-                </div>
-                <div class="index05_f_w">
-                  <div class="index05_f_w01"> 創意工廠</div>
-                  <div class="index05_f_w02"> 提供3D Printer，Laser Cutters等設備，提供更多創作實踐機會。</div>
-                </div>
-              </div>
-            </div>
-
-
-
-          </div>
-        </div>
-        <!--區塊06-->
-        <div id="indexbg06">
-          <div id="index06_left">
-            <div id="index06_left_icon">
-              <div class="index06_icon_pic"><a href="https://www.facebook.com/chub.tainan/" target="_blank" onmouseover="MM_swapImage('fb','','images/icon_fb.png',1)" onmouseout="MM_swapImgRestore()"><img src="images/icon_fb_01.png" width="50" height="50" id="fb" /></a></div>
-              <div class="index06_icon_pic"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tt','','images/icon_tt.png',0)"><img src="images/icon_tt_01.png" width="50" height="50" id="tt" /></a></div>
-              <div class="index06_icon_pic"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('gp','','images/icon_gp.png',1)"><img src="images/icon_gp_01.png" width="50" height="50" id="gp" /></a></div>
-            </div>
-          </div>
-          <div id="index06_right">
             <div class="index_title">
-              <div class="index_title_cht">聯絡我們</div>
+              <div class="index_title_en">Space</div>
+              <div class="index_title_cht">C-Hub 場地申請</div>
             </div>
-            <div id="index06_contact">
-              <div id="index06_contact_right"> <span class="darkgray14pxbold">地址</span><br />
-              臺南市大學路1號<br />
-              光復校區規劃與設計學院（小東路與前鋒路交叉口）<br />
-              University Road, Tainan City, Taiwan 701<br />
-              <br />
-              <br />
-              <span class="darkgray14pxbold">聯繫資訊</span><br />
-              Email：<a href="mailto:chub.ncku@gmail.com">chub.ncku@gmail.com</a><br />
-              Facebook：<a href="https://www.facebook.com/chub.tainan/">C-Hub成大創意基地</a><br />
-              電話：+886-6-2360426 ╱ +886-6-2351842<br />
+            <div class="index_rule">
+              <div class="rule">
+                <h2>借用規範</h2>
+                <p>一、本空間以優先提供校內單位使用為原則，並得開放校外單位借用，收費標準如下。
+
+  (一)空間租借費用標準：
+
+    一樓空間: 120人(容納人數) - 10,000元/4小時
+
+    二樓空間: 20人(容納人數) - 3,00元/4小時 (限非營業時段)
+
+    三樓空間: 50人(容納人數) - 4,500元/4小時
+
+    收費標準以4小時為一個時段：08:00-12:00；13:00-17:00； 18:00-22:00。
+    租借單位應於活動舉辦日前3日完成費用繳交。
+    校內單位(含規劃與設計學院)以8折計。
+    本校一級行政單位舉辦之學術性或重要集會活動，若為特殊個案，則專案簽請本校校長核可後酌予優待。
+
+  (二)設備租借費用標準：
+
+    投影機: 限借2台 - 500元/台/每4小時
+
+    筆記型電腦: 限借2台 - 500元/台/每4小時
+
+    LED電視(一樓): 限借2台 - 500元/台/每4小時
+
+    LED電視(三樓): 限借4台 - 500元/台/每4小時
+
+    冷氣費用(一樓): 1000元/每4小時
+
+    冷氣費用(三樓): 500元/每4小時
+
+    #設備租借費用，校內單位以5折計，規劃與設計學院院內單位免費使用(冷氣費用2折)。
+
+二、租借單位應負責維護場所清潔。海報旗幟未經國立成功大學規劃與設計學院同意，不得擅意張貼、裝置及插掛。借用單位事後應即時撤離並恢復空間清潔原貌。嚴重汙損空間者，需賠償清潔費用；置留空間之物品在活動結束後2小時內仍未搬離者，以廢棄物處理之。
+
+三、租借單位對各項設備器材，應善加愛護，妥為使用，並請注意用電安全。使用視聽器材應洽管理人員，不得擅自引接電源。若有人為或不當使用以致損壞，應負責賠償責任。租用單位應負責維護場所秩序，避免喧嘩吵雜。
+
+四、各單位借用空間應填寫申請表，最遲於7天前向C-Hub提出申請，經審核同意後方可登記使用。使用空間時，應依原申請使用目的使用，以維信用。
+
+五、申請人因故不能於核准之時間使用空間者，應於原核准使用日前三天通知管理人員撤回申請，或申請變更使用時間或空間。前項情形，經核准撤回申請者，已繳納之費用扣除手續費後無息退還；經核准變更使用時間或場空間者，已繳納之費用數額於變更後有增減者，管理人員應通知申請人補繳，但不退還差額。
+
+六、申請人未於管理人員核准之時間使用空間者，除前條規定外，已繳納之費用不予退還。但因不可抗力之事由致不能使用者，經規劃與設計學院院長批准，已繳納之費用扣除手續費後無息退還。
+</p>
+
+<h2>設備借用須知</h2>
+<p>
+1.借用設備需視當天設備狀況，不保證當天設備無虞。
+
+2.請小心使用設備，若有損壞，需負復原或賠償之責。
+
+3.場地使用結束，請清理場地並將設備歸位。</p>
+            </div>
+            </div>
+            <hr>
+            <div class="rule center">
+              <h2 class="">申請流程</h2>
+              <div><iframe src="https://www.youtube.com/embed/4OVYZKUx7zg" frameborder="0" allowfullscreen></iframe></div>
+            </div>
+            <script type="text/javascript" src="//chub.checkfront.com/lib/interface--30.js"></script>
+            <!-- CHECKFRONT BOOKING PLUGIN v23-->
+            <div id="CHECKFRONT_WIDGET_01"><p id="CHECKFRONT_LOADER" style="background: url('//chub.checkfront.com/images/loader.gif') left center no-repeat; padding: 5px 5px 5px 20px">Searching Availability...</p></div>
+            <script>
+            new CHECKFRONT.Widget ({
+            host: 'chub.checkfront.com',
+            target: 'CHECKFRONT_WIDGET_01',
+            options: 'tabs',
+            provider: 'droplet'
+            }).render();
+            </script>
+            <noscript><a href="https://chub.checkfront.com/reserve/" style="font-size: 16px">Continue to Secure Booking System &raquo;</a></noscript>
+          </div>
+        </div>
+
+        <div id="google"></div>
+        <!--footer-->
+        <div id="basic">
+          <div id="basic_left">
+            <div id="basic_100">
+              <div id="basic_add">國立成功大學規劃與設計學院<br />
+                C-Hub @ NCKU 創意基地<br />
+              地址｜台南市大學路一號 University Road, Tainan, TAIWAN 701</div>
+              <div id="basic_copyright">© 2016 C-Hub @ NCKU 創意基地. All rights reserved. Presented by xLab.</div>
             </div>
           </div>
         </div>
-      </div>
-      <!--google地圖-->
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.7459968311946!2d120.22011011541457!3d22.996366023076718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e76929cdb8dcf%3A0x90bb6d3827d32415!2zNzAx5Y-w5Y2X5biC5p2x5Y2A5aSn5a246LevMeiZnw!5e0!3m2!1szh-TW!2stw!4v1457405588707" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-      <div id="google"></div>
-      <!--footer-->
-      <div id="basic">
-        <div id="basic_left">
-          <div id="basic_100">
-            <div id="basic_add">國立成功大學規劃與設計學院<br />
-              C-Hub @ NCKU 創意基地<br />
-            地址｜台南市大學路一號 University Road, Tainan, TAIWAN 701</div>
-            <div id="basic_copyright">© 2016 C-Hub @ NCKU 創意基地. All rights reserved. Presented by xLab.</div>
-          </div>
-        </div>
-      </div>
-      <p>
-        <a href="#0" class="cd-top">Top</a>
-      </p>
-    </body>
-  </html>
+        <p>
+          <a href="#0" class="cd-top">Top</a>
+        </p>
+      </body>
+    </html>

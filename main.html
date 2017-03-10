@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>C-Hub 成大創意基地</title>
+    <meta name="keyword" content="NCKU, C-Hub">
+    <meta name="description" content="C-Hub
+一個屬於成功大學師生的創意空間，也邀請自由工作者及企業夥伴一起加入。從共創空間、展覽、論壇到各式各樣的活動，在這個屬於創意人的一方天地，我們將城市化做舞台，在這裏一起築夢， 透過一次一次的激盪，把創意揮灑在世界與城市的每個角落。
+
+成功大學規劃與設計學院擁有豐富設備實作與共同資源，工作坊、論壇，人與人之間交流、概念與理想的火花碰撞，每一天都在發生，共同實踐想法；嘗試動手去做，從創意工坊、材料圖書室，揮灑創意的工具，更好的環境，豐富的設備器材，開啟無限創作能量。我們相信，燃起創意的火花，就能一起成就燦爛好風光。C-Hub是多元豐富的設計殿堂，更是所有理想的舞台。探索城市、認識台南，從C-Hub開始，邁向夢想，認識更好的自己。
+
+創意：匯聚豐沛創作才華，點亮最棒的構想。
+實作：「動手去做」是實踐任何計畫的第一步。
+學習：設計想法與實務操作，在C-Hub的每一天，都有不同的成長。
+資源：C-Hub提供諮詢協助和工具操作技能，帶領所有夥伴一起前進。
+城市：台南是C-Hub的舞台，陪伴理想發光，最棒的點子都要走入生活，共同實踐。">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="/images/index_bg01.jpg"/>
+    <meta name="robots" content="all">
+    <meta name="distribution" content="GLOBAL">
+    <meta name="rating" content="general">
+    <meta name="revisit-after" content="7 days">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css-->
+    <link href="images/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="images/css/content.css" rel="stylesheet" type="text/css" />
+    <link href="images/css/layout.css" rel="stylesheet" type="text/css" />
+    <!--nav-->
+    <link href="images/css/nav.css" rel="stylesheet" type="text/css" />
+    <!--js-->
+    <script src="includes/js/jquery-1.9.1.min.js"></script>
+    <script>
+    $(function(){
+      $(window).load(function(){
+        $(window).bind('scroll resize', function(){
+          var $this = $(this);
+          var $this_Top=$this.scrollTop();
+
+            //當高度小於100時，關閉區塊
+          if($this_Top < 76){
+            $('#top-bar').stop().animate({top:"-76px"});
+            }
+          if($this_Top > 76){
+            $('#top-bar').stop().animate({top:"0px"});
+
+          }
+        }).scroll();
+      });
+    });
+    </script>
+    <!--js-->
+    <script type="text/javascript" src="includes/js/swfobject.js"></script>
+    <script type="text/javascript" src="includes/js/jquery.min.js"></script>
+    <script language="javascript">
+      $(document).ready(function() {
+            /*  2nd example */
+
+        $("#nav1 li a").wrapInner( '<span class="out"></span>' );
+
+        $("#nav1 li a").each(function() {
+          $( '<span class="over">' +  $(this).text() + '</span>' ).appendTo( this );
+        });
+        $("#nav1 li a").hover(function() {
+                $(".out", this).stop().animate({'top':  '76px'},  200); // move down - hide
+                  $(".over",  this).stop().animate({'top':  '0px'},   200); // move down - show
+        }, function() {
+                  $(".out", this).stop().animate({'top':  '0px'},   200); // move up - show
+                $(".over",  this).stop().animate({'top':  '-76px'}, 200); // move up - hide
+        });
+      });
+    </script>
+    <!--回上層按鈕-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="includes/js/main.js"></script>
+    <!--[if lt IE 8]>
+    <style type="text/css">
+    li a {display:inline-block;}
+    li a {display:block;}
+    </style>
+    <![endif]-->
+    <script type="text/javascript">
+    function MM_swapImgRestore() { //v3.0
+    var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+      }
+      function MM_preloadImages() { //v3.0
+      var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+      var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+        if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+        }
+        function MM_findObj(n, d) { //v4.01
+        var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+        d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+        if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+        for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+        if(!x && d.getElementById) x=d.getElementById(n); return x;
+        }
+        function MM_swapImage() { //v3.0
+        var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+        if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+        }
+        </script>
+      </head>
+      <!--消息跑馬燈-->
+      <script type="text/javascript" src="includes/js/kxbdMarquee.js"></script>
+      <script type="text/javascript">
+        $(function(){
+          $('#marquee4').kxbdMarquee({direction:'up',isEqual:false});
+        });
+      </script>
+
+
+
+
+
+      <body onload="MM_preloadImages('images/icon_fb_01.png','images/icon_gp.png')">
+        <!--置頂選單-->
+        <div id="top-bar">
+          <div id="">
+            <div id="indextopswf">
+              <div id="logo"><a href="index.html"><img src="images/logo.png" width="278" height="76" /></a></div>
+              <div id="indextop">
+                <div id="nav1" class="nav">
+                  <ul>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="space.html">場地申請</a></li>
+                  </ul>
+                  <div class="cls"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--TOP-->
+        <div id="indextopbg">
+          <div id="">
+            <div id="indextopswf">
+              <div id="logo"><a href="index.html"><img src="images/logo.png" width="278" height="76" /></a></div>
+              <div id="indextop">
+                <div id="nav1" class="nav">
+                  <ul>
+                    <li><a href="about.html">關於我們</a></li>
+                    <li><a href="space.html">場地申請</a></li>
+                  </ul>
+                  <div class="cls"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--區塊01-->
+        <div id="indexbg01">
+          <div class="wrapper">
+            <div id="indexcontent">
+              <div id="indexpic01"><img src="images/index_pic01.png"/></div>
+              <div id="indexpic02">
+                <div class="indexbtn">
+                  <a href="about.html" class="css_btn_class01">關於C-Hub</a>
+                </div>
+                <div class="indexbtn">
+                  <a href="#indexbg06" class="css_btn_class01">聯絡我們</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--區塊03-->
+        <div id="indexbg03">
+          <div class="wrapper">
+            <div id="indexcontent03">
+
+              <div class="index_title">
+                <div class="index_title_en">our mission</div>
+                <div class="index_title_cht">我們的任務</div>
+              </div>
+
+              <div id="index03_w">打破現有校園的邊界，建立一個由業界人士引領產業創新與改造，<br />
+              學生提供創意點子，與市民共同想像城市未來面貌的創意基地</div>
+              <div id="index03_banner">
+                <div class="index03_banner_box">
+                  <div class="index03_banner_box_pic"> <img src="images/index03_b01.png" width="138" height="138" /></div>
+                  <div class="index03_banner_box_en"> Thinking</div>
+                  <div class="index03_banner_box_cht"> 無限制的想像與思考</div>
+                </div>
+                <div class="index03_banner_box">
+                  <div class="index03_banner_box_pic"> <img src="images/index03_b02.png" width="138" height="138" /></div>
+                  <div class="index03_banner_box_en"> Prototyping</div>
+                  <div class="index03_banner_box_cht"> 最純粹與原始的想像</div>
+                </div>
+                <div class="index03_banner_box">
+                  <div class="index03_banner_box_pic"> <img src="images/index03_b03.png" width="138" height="138" /></div>
+                  <div class="index03_banner_box_en"> Entrepreneurship</div>
+                  <div class="index03_banner_box_cht"> 產業與學園<br />
+                  共同培養新興創業家</div>
+                </div>
+                <div class="index03_banner_box">
+                  <div class="index03_banner_box_pic"> <img src="images/index03_b04.png" width="138" height="138" /></div>
+                  <div class="index03_banner_box_en"> Experiencing</div>
+                  <div class="index03_banner_box_cht"> 以體驗設計<br />
+                  塑造使用者旅程</div>
+                </div>
+                <div class="index03_banner_box">
+                  <div class="index03_banner_box_pic"> <img src="images/index03_b05.png" width="138" height="138" /></div>
+                  <div class="index03_banner_box_en"> Urban Realization</div>
+                  <div class="index03_banner_box_cht"> 實踐城市的想像與遠見</div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <!--區塊04-->
+        <div id="indexbg04">
+          <div class="wrapper">
+            <div id="indexcontent04">
+              <div class="index_title_w">
+                <div class="index_title_en_w">our service</div>
+                <div class="index_title_cht_w">我們的服務</div>
+              </div>
+
+              <div id="index04_w">整合校內課程與人才資源，提供創新概念與構想，快速測試構想原型，提出創新方案</div>
+              <div id="index04_pic"> <img src="images/index02_pic02.png" /></div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--區塊05-->
+        <div id="indexbg05">
+
+          <div id="indexcontent05">
+            <div id="indexcontent05_w_left"></div>
+            <div id="indexcontent05_w">
+              <div id="index05_title">FLOOR GUIDANCE<br />
+              樓層介紹</div>
+
+              <div class="index05_fbox">
+                <div class="index05_f_no"> 5F</div>
+                <div class="index05_f_w">
+                  <div class="index05_f_w01"> 育成實驗室</div>
+                  <div class="index05_f_w02">
+                  提供新生團隊與企業一個能互相工通、激盪的共同空間。</div>
+                </div>
+              </div>
+              <div class="index05_fbox">
+                <div class="index05_f_no"> 4F</div>
+                <div class="index05_f_w">
+                  <div class="index05_f_w01"> 典藏中心</div>
+                  <div class="index05_f_w02"> 從數位典藏出發，在C-Hub建立美學品味，攜手認識世界。</div>
+                </div>
+              </div>
+              <div class="index05_fbox">
+                <div class="index05_f_no"> 3F</div>
+                <div class="index05_f_w">
+                  <div class="index05_f_w01"> 展覽室</div>
+                  <div class="index05_f_w02"> 空間由室內延伸至室外，突破展覽的單一型態，並作為C-Hub講堂使用。</div>
+                </div>
+              </div>
+              <div class="index05_fbox">
+                <div class="index05_f_no"> 2F</div>
+                <div class="index05_f_w">
+                  <div class="index05_f_w01"> C-Hub咖啡</div>
+                  <div class="index05_f_w02"> 作為老師與企業的休閒空間</div>
+                </div>
+              </div>
+              <div class="index05_fbox">
+                <div class="index05_f_no"> 1F</div>
+                <div class="index05_f_w">
+                  <div class="index05_f_w01"> 共創空間</div>
+                  <div class="index05_f_w02"> 主要為共同工作空間及活動舉辦地，為產業與城市溝通及合作空間。</div>
+                </div>
+                <div class="index05_f_w">
+                  <div class="index05_f_w01"> 創意工廠</div>
+                  <div class="index05_f_w02"> 提供3D Printer，Laser Cutters等設備，提供更多創作實踐機會。</div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+        <!--區塊06-->
+        <div id="indexbg06">
+          <div id="index06_left">
+            <div id="index06_left_icon">
+              <div class="index06_icon_pic"><a href="https://www.facebook.com/chub.tainan/" target="_blank" onmouseover="MM_swapImage('fb','','images/icon_fb.png',1)" onmouseout="MM_swapImgRestore()"><img src="images/icon_fb_01.png" width="50" height="50" id="fb" /></a></div>
+              <div class="index06_icon_pic"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('tt','','images/icon_tt.png',0)"><img src="images/icon_tt_01.png" width="50" height="50" id="tt" /></a></div>
+              <div class="index06_icon_pic"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('gp','','images/icon_gp.png',1)"><img src="images/icon_gp_01.png" width="50" height="50" id="gp" /></a></div>
+            </div>
+          </div>
+          <div id="index06_right">
+            <div class="index_title">
+              <div class="index_title_cht">聯絡我們</div>
+            </div>
+            <div id="index06_contact">
+              <div id="index06_contact_right"> <span class="darkgray14pxbold">地址</span><br />
+              臺南市大學路1號<br />
+              光復校區規劃與設計學院（小東路與前鋒路交叉口）<br />
+              University Road, Tainan City, Taiwan 701<br />
+              <br />
+              <br />
+              <span class="darkgray14pxbold">聯繫資訊</span><br />
+              Email：<a href="mailto:chub.ncku@gmail.com">chub.ncku@gmail.com</a><br />
+              Facebook：<a href="https://www.facebook.com/chub.tainan/">C-Hub成大創意基地</a><br />
+              電話：+886-6-2360426 ╱ +886-6-2351842<br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--google地圖-->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.7459968311946!2d120.22011011541457!3d22.996366023076718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e76929cdb8dcf%3A0x90bb6d3827d32415!2zNzAx5Y-w5Y2X5biC5p2x5Y2A5aSn5a246LevMeiZnw!5e0!3m2!1szh-TW!2stw!4v1457405588707" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div id="google"></div>
+      <!--footer-->
+      <div id="basic">
+        <div id="basic_left">
+          <div id="basic_100">
+            <div id="basic_add">國立成功大學規劃與設計學院<br />
+              C-Hub @ NCKU 創意基地<br />
+            地址｜台南市大學路一號 University Road, Tainan, TAIWAN 701</div>
+            <div id="basic_copyright">© 2016 C-Hub @ NCKU 創意基地. All rights reserved. Presented by xLab.</div>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a href="#0" class="cd-top">Top</a>
+      </p>
+    </body>
+  </html>
