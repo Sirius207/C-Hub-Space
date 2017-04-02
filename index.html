@@ -1,10 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>C-Hub 成大創意基地</title>
-    <meta name="keyword" content="NCKU, C-Hub">
-    <meta name="description" content="C-Hub
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>C-Hub 成大創意基地</title>
+  <meta name="keyword" content="NCKU, C-Hub">
+  <meta name="description" content="C-Hub
 一個屬於成功大學師生的創意空間，也邀請自由工作者及企業夥伴一起加入。從共創空間、展覽、論壇到各式各樣的活動，在這個屬於創意人的一方天地，我們將城市化做舞台，在這裏一起築夢， 透過一次一次的激盪，把創意揮灑在世界與城市的每個角落。
 
 成功大學規劃與設計學院擁有豐富設備實作與共同資源，工作坊、論壇，人與人之間交流、概念與理想的火花碰撞，每一天都在發生，共同實踐想法；嘗試動手去做，從創意工坊、材料圖書室，揮灑創意的工具，更好的環境，豐富的設備器材，開啟無限創作能量。我們相信，燃起創意的火花，就能一起成就燦爛好風光。C-Hub是多元豐富的設計殿堂，更是所有理想的舞台。探索城市、認識台南，從C-Hub開始，邁向夢想，認識更好的自己。
@@ -14,169 +15,137 @@
 學習：設計想法與實務操作，在C-Hub的每一天，都有不同的成長。
 資源：C-Hub提供諮詢協助和工具操作技能，帶領所有夥伴一起前進。
 城市：台南是C-Hub的舞台，陪伴理想發光，最棒的點子都要走入生活，共同實踐。">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="/images/index_bg01.jpg"/>
-    <meta name="robots" content="all">
-    <meta name="distribution" content="GLOBAL">
-    <meta name="rating" content="general">
-    <meta name="revisit-after" content="7 days">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--css-->
-    <link href="images/css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="images/css/content.css" rel="stylesheet" type="text/css" />
-    <link href="images/css/layout.css" rel="stylesheet" type="text/css" />
-    <!--nav-->
-    <link href="images/css/nav.css" rel="stylesheet" type="text/css" />
-    <script src="includes/js/jquery-1.9.1.min.js"></script>
-    <script>
-    $(function(){
-    $(window).load(function(){
-    $(window).bind('scroll resize', function(){
-    var $this = $(this);
-    var $this_Top=$this.scrollTop();
+  <meta property="og:url" content="">
+  <meta property="og:image" content="/images/index_bg01.jpg" />
+  <meta name="robots" content="all">
+  <meta name="distribution" content="GLOBAL">
+  <meta name="rating" content="general">
+  <meta name="revisit-after" content="7 days">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--css-->
+  <link href="images/css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="images/css/content.css" rel="stylesheet" type="text/css" />
+  <link href="images/css/layout.css" rel="stylesheet" type="text/css" />
+  <!--nav-->
+  <link href="images/css/nav.css" rel="stylesheet" type="text/css" />
+  <script src="includes/js/jquery-1.9.1.min.js"></script>
+  <script>
+    $(function () {
+      $(window).load(function () {
+        $(window).bind('scroll resize', function () {
+          var $this = $(this);
+          var $this_Top = $this.scrollTop();
 
-    //當高度小於100時，關閉區塊
-    if($this_Top < 76){
-    $('#top-bar').stop().animate({top:"-76px"});
-    }
-    if($this_Top > 76){
-    $('#top-bar').stop().animate({top:"0px"});
+          //當高度小於100時，關閉區塊
+          if ($this_Top < 76) {
+            $('#top-bar').stop().animate({
+              top: "-76px"
+            });
+          }
+          if ($this_Top > 76) {
+            $('#top-bar').stop().animate({
+              top: "0px"
+            });
 
-    }
-    }).scroll();
+          }
+        }).scroll();
+      });
     });
-    });
-    </script>
+  </script>
 
-    <!--js-->
-    <script type="text/javascript" src="includes/js/swfobject.js"></script>
-    <script type="text/javascript" src="includes/js/jquery.min.js"></script>
-    <!--回上層按鈕-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="includes/js/main.js"></script>
+  <!--js-->
+  <script type="text/javascript" src="includes/js/swfobject.js"></script>
+  <script type="text/javascript" src="includes/js/jquery.min.js"></script>
+  <!--回上層按鈕-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="includes/js/main.js"></script>
 
-    <!--[if lt IE 8]>
+  <!--[if lt IE 8]>
     <style type="text/css">
     li a {display:inline-block;}
     li a {display:block;}
     </style>
     <![endif]-->
-    <script type="text/javascript">
+  <script type="text/javascript">
     function MM_preloadImages() { //v3.0
-    var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-      if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+      var d = document;
+      if (d.images) {
+        if (!d.MM_p) d.MM_p = new Array();
+        var i, j = d.MM_p.length,
+          a = MM_preloadImages.arguments;
+        for (i = 0; i < a.length; i++)
+          if (a[i].indexOf("#") != 0) {
+            d.MM_p[j] = new Image;
+            d.MM_p[j++].src = a[i];
+          }
       }
-      </script>
-    </head>
-    <body>
-      <!--TOP-->
-      <div id="indextopbg">
-        <div id="">
-          <div id="indextopswf">
-            <div id="logo"><a href="index.html"><img src="images/logo.png" width="278" height="76" /></a></div>
-          </div>
+    }
+  </script>
+</head>
+
+<body>
+  <!--TOP-->
+  <div id="indextopbg">
+    <div id="">
+      <div id="indextopswf">
+        <div id="logo">
+          <a href="index.html"><img src="images/logo.png" width="278" height="76" /></a>
         </div>
       </div>
+    </div>
+  </div>
 
 
-      <!--最新消息-->
-      <div id="newsbg">
-        <div class="wrapper">
-          <div id="newscontent">
+  <!--最新消息-->
+  <div id="newsbg">
+    <div class="wrapper">
+      <div id="newscontent">
 
-            <div class="index_title">
-              <div class="index_title_en">Space</div>
-              <div class="index_title_cht">C-Hub 場地申請</div>
+        <div class="index_title">
+          <div class="index_title_en">Space</div>
+          <div class="index_title_cht">C-Hub 場地申請</div>
+        </div>
+        <div class="index_rule">
+          <div class="rule">
+            <h2>申請說明</h2>
+            <p>歡迎使用 C-Hub 場地租借系統！<br>第一次來的朋友，莫慌，請先點選動態影片，您將快速了解租借流程，也請記得觀看租借規範，預防任何藏在細節裡的魔鬼。 <br>有任何問題都歡迎與我們聯繫！
+            </p>
+            <div class="center">
+              <iframe src="https://www.youtube.com/embed/4meA6UlO-Aw" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="index_rule">
-              <div class="rule">
-                <h2>借用規範</h2>
-                <p>一、本空間以優先提供校內單位使用為原則，並得開放校外單位借用，收費標準如下。
-
-  (一)空間租借費用標準：
-
-    一樓空間: 120人(容納人數) - 10,000元/4小時
-
-    二樓空間: 20人(容納人數) - 3,000元/4小時 (限非營業時段)
-
-    三樓空間: 50人(容納人數) - 4,500元/4小時
-
-    收費標準以4小時為一個時段：08:00-12:00；13:00-17:00； 18:00-22:00。
-    租借單位應於活動舉辦日前3日完成費用繳交。
-    校內單位(含規劃與設計學院)以8折計。
-    本校一級行政單位舉辦之學術性或重要集會活動，若為特殊個案，則專案簽請本校校長核可後酌予優待。
-
-  (二)設備租借費用標準：
-
-    投影機: 限借2台 - 500元/台/每4小時
-
-    筆記型電腦: 限借2台 - 500元/台/每4小時
-
-    LED電視(一樓): 限借2台 - 500元/台/每4小時
-
-    LED電視(三樓): 限借4台 - 500元/台/每4小時
-
-    冷氣費用(一樓): 1000元/每4小時
-
-    冷氣費用(三樓): 500元/每4小時
-
-    #設備租借費用，校內單位以5折計，規劃與設計學院院內單位免費使用(冷氣費用2折)。
-
-二、租借單位應負責維護場所清潔。海報旗幟未經國立成功大學規劃與設計學院同意，不得擅意張貼、裝置及插掛。借用單位事後應即時撤離並恢復空間清潔原貌。嚴重汙損空間者，需賠償清潔費用；置留空間之物品在活動結束後2小時內仍未搬離者，以廢棄物處理之。
-
-三、租借單位對各項設備器材，應善加愛護，妥為使用，並請注意用電安全。使用視聽器材應洽管理人員，不得擅自引接電源。若有人為或不當使用以致損壞，應負責賠償責任。租用單位應負責維護場所秩序，避免喧嘩吵雜。
-
-四、各單位借用空間應填寫申請表，最遲於7天前向C-Hub提出申請，經審核同意後方可登記使用。使用空間時，應依原申請使用目的使用，以維信用。
-
-五、申請人因故不能於核准之時間使用空間者，應於原核准使用日前三天通知管理人員撤回申請，或申請變更使用時間或空間。前項情形，經核准撤回申請者，已繳納之費用扣除手續費後無息退還；經核准變更使用時間或場空間者，已繳納之費用數額於變更後有增減者，管理人員應通知申請人補繳，但不退還差額。
-
-六、申請人未於管理人員核准之時間使用空間者，除前條規定外，已繳納之費用不予退還。但因不可抗力之事由致不能使用者，經規劃與設計學院院長批准，已繳納之費用扣除手續費後無息退還。
-</p>
-
-<h2>設備借用須知</h2>
-<p>
-1.借用設備需視當天設備狀況，不保證當天設備無虞。
-
-2.請小心使用設備，若有損壞，需負復原或賠償之責。
-
-3.場地使用結束，請清理場地並將設備歸位。</p>
-            </div>
-            </div>
-            <hr>
-            <div class="rule center">
-              <h2 class="">申請流程</h2>
-              <div><iframe src="https://www.youtube.com/embed/4OVYZKUx7zg" frameborder="0" allowfullscreen></iframe></div>
-            </div>
-            <script type="text/javascript" src="//chub.checkfront.com/lib/interface--30.js"></script>
-            <!-- CHECKFRONT BOOKING PLUGIN v23-->
-            <div id="CHECKFRONT_WIDGET_01"><p id="CHECKFRONT_LOADER" style="background: url('//chub.checkfront.com/images/loader.gif') left center no-repeat; padding: 5px 5px 5px 20px">Searching Availability...</p></div>
-            <script>
-            new CHECKFRONT.Widget ({
+          </div>
+        </div>
+        <hr>
+        <script type="text/javascript" src="//chub.checkfront.com/lib/interface--30.js"></script>
+        <!-- CHECKFRONT BOOKING PLUGIN v23-->
+        <div id="CHECKFRONT_WIDGET_01">
+          <p id="CHECKFRONT_LOADER" style="background: url('//chub.checkfront.com/images/loader.gif') left center no-repeat; padding: 5px 5px 5px 20px">Searching Availability...</p>
+        </div>
+        <script>
+          new CHECKFRONT.Widget({
             host: 'chub.checkfront.com',
             target: 'CHECKFRONT_WIDGET_01',
             options: 'tabs',
             provider: 'droplet'
-            }).render();
-            </script>
-            <noscript><a href="https://chub.checkfront.com/reserve/" style="font-size: 16px">Continue to Secure Booking System &raquo;</a></noscript>
-          </div>
-        </div>
+          }).render();
+        </script>
+        <noscript><a href="https://chub.checkfront.com/reserve/" style="font-size: 16px">Continue to Secure Booking System &raquo;</a></noscript>
+      </div>
+    </div>
 
-        <div id="google"></div>
-        <!--footer-->
-        <div id="basic">
-          <div id="basic_left">
-            <div id="basic_100">
-              <div id="basic_add">國立成功大學規劃與設計學院<br />
-                C-Hub @ NCKU 創意基地<br />
-              地址｜台南市大學路一號 University Road, Tainan, TAIWAN 701</div>
-              <div id="basic_copyright">© 2016 C-Hub @ NCKU 創意基地. All rights reserved. Presented by xLab.</div>
-            </div>
-          </div>
+    <div id="google"></div>
+    <!--footer-->
+    <div id="basic">
+      <div id="basic_left">
+        <div id="basic_100">
+          <div id="basic_add">國立成功大學規劃與設計學院<br /> C-Hub @ NCKU 創意基地<br /> 地址｜台南市大學路一號 University Road, Tainan, TAIWAN 701</div>
+          <div id="basic_copyright">© 2016 C-Hub @ NCKU 創意基地. All rights reserved. Presented by xLab.</div>
         </div>
-        <p>
-          <a href="#0" class="cd-top">Top</a>
-        </p>
-      </body>
-    </html>
+      </div>
+    </div>
+    <p>
+      <a href="#0" class="cd-top">Top</a>
+    </p>
+</body>
+
+</html>
