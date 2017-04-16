@@ -994,6 +994,8 @@ sup {
 }
 
 #logo {
+	display: flex;
+	align-items: center;
 	float: left;
 	height: 76px;
 	width: 276px;
